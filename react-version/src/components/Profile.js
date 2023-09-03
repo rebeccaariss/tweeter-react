@@ -1,3 +1,7 @@
+const avatar = "../../public/profile-hex.png";
+const firstName = "Rebecca";
+const lastName = "Ariss";
+
 function Profile() {
   return (
     <aside>
