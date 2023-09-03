@@ -5,11 +5,11 @@ const tweets = {
 function TweetForm() {
   return (
     <section className="newtweet">
-      <form method="post" action="/tweets" className="newtweet__form">
+      <form method="post" action="/tweets" className="newtweet__form" onSubmit={(event) => {
+        event.preventDefault();
+        }}>
         <textarea className="form__textarea" name="text" placeholder={tweets[1]}></textarea>
-        <input type="submit" value="Tweet" className="form__input" onClick={(event) => {
-          event.preventDefault();
-        }} />
+        <input type="submit" value="Tweet" className="form__input" />
         <span className="form__counter">140</span>
       </form>
     </section>
